@@ -1,22 +1,8 @@
 <template>
   <div id="app">
-    <block-one></block-one>
-    <block-two></block-two>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import BlockOne from './components/BlockOne.vue'
-import BlockTwo from './components/BlockTwo.vue'
-
-export default {
-  name: 'App',
-  components: {
-    BlockOne,
-    BlockTwo
-  }
-}
-</script>
 
 <style>
 #app {
@@ -25,11 +11,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  display: flex;
-  flex-direction: column
 }
-body {
-  margin: 0px;
-  padding: 0px;
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

@@ -16,6 +16,13 @@
             back-end and runs in a docker container in the Google app engine. Future work will incorporate
             deals from other sources like <a href='https://forums.redflagdeals.com/hot-deals-f9/'> RedFlagDeals. </a></p>
         </div>
+        <div class=project-tabs>
+          <h2 class='project-title'>My Personal Website</h2>
+          <p id=description> This website is written in vue and bundled into vanilla HTML/JS/CSS using webpack.
+            This website takes advantage of the versatility of flexbox, including nested flexbox.It was developed
+            in a docker development environment with hot-reload, and deployed to github pages using a deployment
+            script. </p>
+        </div>
     </div>
 </template>
 
@@ -45,11 +52,10 @@ export default {
   min-height: 30vh;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 36px;
 }
 
 .project-title{
-  text-align: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 479px) {

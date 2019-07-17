@@ -1,9 +1,9 @@
 FROM node:alpine 
 WORKDIR /app
 COPY package*.json ./
-COPY . .
 
 RUN npm install
+COPY . .
 
 #entrypoint
 EXPOSE 8080
